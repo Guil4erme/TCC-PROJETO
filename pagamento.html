@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="PAGAMENTO.css">
+    <title>Pagamento - Artigos Esportivos</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Finalizar Compra</h1>
+        
+        <form id="payment-form">
+            <label for="payment-method">Método de Pagamento</label>
+            <select id="payment-method" onchange="togglePaymentOptions()">
+                <option value="card">Cartão de Crédito</option>
+                <option value="boleto">Boleto Bancário</option>
+                <option value="pix">PIX</option>
+            </select>
+
+            <div id="card-options" class="payment-options">
+                <label for="card-number">Número do Cartão</label>
+                <input type="text" id="card-number" placeholder="1234 5678 9012 3456">
+
+                <label for="card-expiry">Data de Validade</label>
+                <input type="text" id="card-expiry" placeholder="MM/YY">
+
+                <label for="card-cvc">CVC</label>
+                <input type="text" id="card-cvc" placeholder="123">
+            </div>
+
+            <div id="boleto-options" class="payment-options">
+                <p>O boleto será gerado após a confirmação da compra.</p>
+            </div>
+
+            <div id="pix-options" class="payment-options">
+                <p>Use a chave PIX fornecida após a confirmação da compra.</p>
+            </div>
+
+            <button type="submit">Pagar</button>
+
+            <h3 class="TOTAL">TOTAL :</h3>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

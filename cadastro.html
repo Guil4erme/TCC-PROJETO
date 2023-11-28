@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styless.css">
+  <title>Cadastro</title>
+</head>
+<body>
+
+    
+    <header>
+        <div class="logo">
+            <h1>EvoBody</h1>
+            
+        </div><!--logo-->
+
+        <div class="cabeçalho-link">
+            <li>
+                <a href="index.html">Inicio </a>
+            </li>
+            <li>
+                <a href="index.html#categorias">Categorias</a>
+            </li>
+            <li>
+                <a href="login.html">Login</a>
+            </li>
+            <li>
+                <a href="index.html#FALE ">Contato</a>
+            </li>
+
+
+        </div><!--cabeçalho-link-->
+        <div class="icon"><span><ion-icon name="bag-outline"></ion-icon></span></div><!--icon-->
+    </header>
+
+  <div class="container">
+    <form id="signupForm">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">Telefone:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Senha:</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="confirmPassword">Confirmar Senha:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+      <button type="button" onclick="validateSignup()">Cadastrar</button>
+    </form>
+
+    <p class="login-link">Já tem uma conta? <a href="index.html">Faça login</a></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
